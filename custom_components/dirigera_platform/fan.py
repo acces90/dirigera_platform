@@ -358,6 +358,10 @@ class ikea_starkvind_air_purifier_binary_sensor(BinarySensorEntity):
         self._device.update()
 
     @property
+    def icon(self):
+        return self._icon
+
+    @property
     def name(self):
         return self._device.name + " " + self._prefix.replace("_"," ")  
     
@@ -397,6 +401,10 @@ class ikea_starkvind_air_purifier_switch_sensor(SwitchEntity):
 
     def update(self):
         self._device.update()
+
+    @property
+    def icon(self):
+        return self._icon
 
     @property
     def name(self):
