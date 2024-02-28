@@ -316,7 +316,7 @@ class ikea_starkvind_air_purifier_sensor(SensorEntity):
 
     @property
     def icon(self):
-        return "mdi:air-filter"
+        return self._icon
     
     @property
     def name(self):
